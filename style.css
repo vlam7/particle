@@ -1,0 +1,44 @@
+
+body, html {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  overflow: hidden; /* Prevent scrolling */
+  width: 100vw; /* Ensure full viewport width */
+  height: 100vh; /* Ensure full viewport height */
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+
+#wrapper{
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 800px;
+  animation: rotate 16s infinite linear;
+}
+
+@keyframes rotate{
+  100%{
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+.particle {
+  position: fixed;
+  width: 2px;
+  height: 2px;
+  margin-top: 10%; /* Half of height */
+  left: 50%;
+  border-radius: 50%;
+  opacity: 20;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
