@@ -18,7 +18,7 @@ body, html {
 #wrapper{
   position: relative;
   transform-style: preserve-3d;
-  perspective: 800px;
+  perspective: 1000px;
   animation: rotate 16s infinite linear;
 }
 
